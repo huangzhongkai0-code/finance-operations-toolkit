@@ -1,0 +1,5 @@
+id,date,currency,amount,reference
+L1,2026-10-02,CNY,1000,PAY001
+L2,2026-10-02,CNY,-200,
+L3,2026-10-03,CNY,-200,
+L4,2026-10-04,CNY,100,USD001

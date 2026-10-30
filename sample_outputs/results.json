@@ -1,0 +1,334 @@
+{
+  "close_issues": [
+    {
+      "source": "journal.csv",
+      "row": 6,
+      "code": "UNKNOWN_ACCOUNT",
+      "detail": "9999"
+    },
+    {
+      "source": "journal.csv",
+      "row": 7,
+      "code": "UNKNOWN_ACCOUNT",
+      "detail": "9999"
+    },
+    {
+      "source": "journal.csv",
+      "row": 7,
+      "code": "POSSIBLE_DUPLICATE",
+      "detail": "Same line as row 6; review required"
+    },
+    {
+      "source": "journal.csv",
+      "row": 8,
+      "code": "OUT_OF_PERIOD",
+      "detail": "2026-09-30"
+    },
+    {
+      "source": "journal.csv",
+      "row": 9,
+      "code": "INVALID_LINE",
+      "detail": "Invalid amount: 'bad'"
+    },
+    {
+      "source": "balances.csv",
+      "row": "",
+      "code": "MISSING_BALANCE",
+      "detail": "9999/CNY"
+    }
+  ],
+  "voucher_checks": [
+    {
+      "voucher_id": "V001",
+      "currency": "CNY",
+      "debit": "1000",
+      "credit": "1000",
+      "difference": "0",
+      "status": "BALANCED"
+    },
+    {
+      "voucher_id": "V002",
+      "currency": "CNY",
+      "debit": "200",
+      "credit": "180",
+      "difference": "20",
+      "status": "UNBALANCED"
+    },
+    {
+      "voucher_id": "V003",
+      "currency": "CNY",
+      "debit": "100",
+      "credit": "0",
+      "difference": "100",
+      "status": "UNBALANCED"
+    },
+    {
+      "voucher_id": "V004",
+      "currency": "CNY",
+      "debit": "10",
+      "credit": "0",
+      "difference": "10",
+      "status": "UNBALANCED"
+    }
+  ],
+  "balance_checks": [
+    {
+      "account": "1002",
+      "currency": "CNY",
+      "opening": "5000",
+      "movement": "820",
+      "expected_closing": "5820",
+      "reported_closing": "5820",
+      "difference": "0",
+      "status": "OK"
+    },
+    {
+      "account": "1122",
+      "currency": "CNY",
+      "opening": "3000",
+      "movement": "-1000",
+      "expected_closing": "2000",
+      "reported_closing": "2000",
+      "difference": "0",
+      "status": "OK"
+    },
+    {
+      "account": "6602",
+      "currency": "CNY",
+      "opening": "0",
+      "movement": "200",
+      "expected_closing": "200",
+      "reported_closing": "250",
+      "difference": "50",
+      "status": "REVIEW"
+    }
+  ],
+  "budget_monthly": [
+    {
+      "month": "2026-09",
+      "department": "Sales",
+      "account": "6602",
+      "currency": "CNY",
+      "budget": "900",
+      "actual": "950",
+      "variance": "50",
+      "variance_pct": "5.555555555555555555555555556",
+      "status": "WITHIN_THRESHOLD",
+      "sources": "budget.csv:2; actual.csv:2"
+    },
+    {
+      "month": "2026-10",
+      "department": "HR",
+      "account": "6602",
+      "currency": "CNY",
+      "budget": "0",
+      "actual": "100",
+      "variance": "100",
+      "variance_pct": "",
+      "status": "UNBUDGETED",
+      "sources": "actual.csv:5"
+    },
+    {
+      "month": "2026-10",
+      "department": "IT",
+      "account": "6602",
+      "currency": "CNY",
+      "budget": "500",
+      "actual": "400",
+      "variance": "-100",
+      "variance_pct": "-20.0",
+      "status": "WITHIN_THRESHOLD",
+      "sources": "budget.csv:4; actual.csv:4"
+    },
+    {
+      "month": "2026-10",
+      "department": "Sales",
+      "account": "6602",
+      "currency": "CNY",
+      "budget": "1000",
+      "actual": "1250",
+      "variance": "250",
+      "variance_pct": "25.00",
+      "status": "OVER_BUDGET",
+      "sources": "budget.csv:3; actual.csv:3"
+    }
+  ],
+  "budget_ytd": [
+    {
+      "department": "HR",
+      "account": "6602",
+      "currency": "CNY",
+      "budget": "0",
+      "actual": "100",
+      "variance": "100"
+    },
+    {
+      "department": "IT",
+      "account": "6602",
+      "currency": "CNY",
+      "budget": "500",
+      "actual": "400",
+      "variance": "-100"
+    },
+    {
+      "department": "Sales",
+      "account": "6602",
+      "currency": "CNY",
+      "budget": "1900",
+      "actual": "2200",
+      "variance": "300"
+    }
+  ],
+  "bank_reconciliation": [
+    {
+      "bank_id": "B1",
+      "ledger_id": "L1",
+      "currency": "CNY",
+      "bank_amount": "1000",
+      "status": "MATCHED",
+      "candidate_ids": "L1",
+      "source": "bank.csv",
+      "row": 2
+    },
+    {
+      "bank_id": "B2",
+      "ledger_id": "",
+      "currency": "CNY",
+      "bank_amount": "-200",
+      "status": "REVIEW",
+      "candidate_ids": "L2;L3",
+      "source": "bank.csv",
+      "row": 3
+    },
+    {
+      "bank_id": "B3",
+      "ledger_id": "",
+      "currency": "CNY",
+      "bank_amount": "-15",
+      "status": "UNMATCHED",
+      "candidate_ids": "",
+      "source": "bank.csv",
+      "row": 4
+    },
+    {
+      "bank_id": "B4",
+      "ledger_id": "",
+      "currency": "USD",
+      "bank_amount": "100",
+      "status": "UNMATCHED",
+      "candidate_ids": "",
+      "source": "bank.csv",
+      "row": 5
+    }
+  ],
+  "ledger_unmatched": [
+    {
+      "ledger_id": "L2",
+      "currency": "CNY",
+      "amount": "-200",
+      "source": "ledger.csv",
+      "row": 3
+    },
+    {
+      "ledger_id": "L3",
+      "currency": "CNY",
+      "amount": "-200",
+      "source": "ledger.csv",
+      "row": 4
+    },
+    {
+      "ledger_id": "L4",
+      "currency": "CNY",
+      "amount": "100",
+      "source": "ledger.csv",
+      "row": 5
+    }
+  ],
+  "receivables_aging": [
+    {
+      "invoice_id": "I1",
+      "customer": "Example Customer A",
+      "currency": "CNY",
+      "amount": "1000",
+      "paid": "400",
+      "outstanding": "600",
+      "days_overdue": 31,
+      "bucket": "31-60",
+      "status": "OPEN",
+      "source": "invoices.csv",
+      "row": 2
+    },
+    {
+      "invoice_id": "I2",
+      "customer": "Example Customer B",
+      "currency": "USD",
+      "amount": "500",
+      "paid": "0",
+      "outstanding": "500",
+      "days_overdue": 0,
+      "bucket": "Current",
+      "status": "OPEN",
+      "source": "invoices.csv",
+      "row": 3
+    },
+    {
+      "invoice_id": "I3",
+      "customer": "Example Customer C",
+      "currency": "CNY",
+      "amount": "200",
+      "paid": "250",
+      "outstanding": "-50",
+      "days_overdue": 108,
+      "bucket": "90+",
+      "status": "OVERPAID",
+      "source": "invoices.csv",
+      "row": 4
+    }
+  ],
+  "receipt_exceptions": [
+    {
+      "source": "receipts.csv",
+      "row": 4,
+      "code": "UNALLOCATED_RECEIPT",
+      "detail": "Unknown invoice, currency mismatch or receipt before invoice"
+    }
+  ],
+  "fx_expenses": [
+    {
+      "id": "E1",
+      "date": "2026-10-01",
+      "category": "Travel",
+      "currency": "USD",
+      "foreign_amount": "100",
+      "rate": "7.10",
+      "base_currency": "CNY",
+      "converted_amount": "710.00",
+      "budget_rate_amount": "700.00",
+      "fx_variance": "10.00",
+      "source": "expenses.csv",
+      "row": 2
+    },
+    {
+      "id": "E2",
+      "date": "2026-10-01",
+      "category": "Software",
+      "currency": "CNY",
+      "foreign_amount": "200",
+      "rate": "1",
+      "base_currency": "CNY",
+      "converted_amount": "200.00",
+      "budget_rate_amount": "200.00",
+      "fx_variance": "0.00",
+      "source": "expenses.csv",
+      "row": 3
+    }
+  ],
+  "fx_exceptions": [
+    {
+      "source": "expenses.csv",
+      "row": 4,
+      "code": "MISSING_FX_RATE",
+      "detail": "No exact-date rate; transaction not converted"
+    }
+  ]
+}

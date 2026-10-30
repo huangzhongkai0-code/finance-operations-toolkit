@@ -1,0 +1,7 @@
+source,row,code,detail
+journal.csv,6,UNKNOWN_ACCOUNT,9999
+journal.csv,7,UNKNOWN_ACCOUNT,9999
+journal.csv,7,POSSIBLE_DUPLICATE,Same line as row 6; review required
+journal.csv,8,OUT_OF_PERIOD,2026-09-30
+journal.csv,9,INVALID_LINE,Invalid amount: 'bad'
+balances.csv,,MISSING_BALANCE,9999/CNY

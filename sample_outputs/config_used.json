@@ -1,0 +1,20 @@
+{
+  "period_start": "2026-10-01",
+  "period_end": "2026-10-31",
+  "as_of": "2026-10-31",
+  "tolerance": "0.01",
+  "matching_days": 3,
+  "budget_alert_pct": "10",
+  "base_currency": "CNY",
+  "accounts": [
+    "1002",
+    "1122",
+    "6001",
+    "6602"
+  ],
+  "department_mapping": {
+    "销售部": "Sales",
+    "销售": "Sales"
+  },
+  "column_mapping": {}
+}

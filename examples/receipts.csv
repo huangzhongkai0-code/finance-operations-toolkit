@@ -1,0 +1,5 @@
+receipt_id,invoice_id,date,currency,amount
+R1,I1,2026-10-10,CNY,400
+R2,I2,2026-11-01,USD,100
+R3,UNKNOWN,2026-10-10,CNY,30
+R4,I3,2026-10-15,CNY,250

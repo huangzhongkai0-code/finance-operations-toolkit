@@ -1,0 +1,5 @@
+month,department,account,currency,budget,actual,variance,variance_pct,status,sources
+2026-09,Sales,6602,CNY,900,950,50,5.555555555555555555555555556,WITHIN_THRESHOLD,budget.csv:2; actual.csv:2
+2026-10,HR,6602,CNY,0,100,100,,UNBUDGETED,actual.csv:5
+2026-10,IT,6602,CNY,500,400,-100,-20.0,WITHIN_THRESHOLD,budget.csv:4; actual.csv:4
+2026-10,Sales,6602,CNY,1000,1250,250,25.00,OVER_BUDGET,budget.csv:3; actual.csv:3

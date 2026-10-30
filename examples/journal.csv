@@ -1,0 +1,9 @@
+voucher_id,date,account,currency,debit,credit,description
+V001,2026-10-01,1002,CNY,1000,0,Customer payment
+V001,2026-10-01,1122,CNY,0,1000,Customer payment
+V002,2026-10-02,6602,CNY,200,0,Office supplies
+V002,2026-10-02,1002,CNY,0,180,Office supplies
+V003,2026-10-03,9999,CNY,50,0,Unknown account
+V003,2026-10-03,9999,CNY,50,0,Unknown account
+V004,2026-09-30,6602,CNY,10,0,Outside period
+V005,2026-10-05,6602,CNY,bad,0,Invalid amount

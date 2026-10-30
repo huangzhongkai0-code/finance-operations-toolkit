@@ -1,0 +1,4 @@
+invoice_id,customer,currency,amount,paid,outstanding,days_overdue,bucket,status,source,row
+I1,Example Customer A,CNY,1000,400,600,31,31-60,OPEN,invoices.csv,2
+I2,Example Customer B,USD,500,0,500,0,Current,OPEN,invoices.csv,3
+I3,Example Customer C,CNY,200,250,-50,108,90+,OVERPAID,invoices.csv,4

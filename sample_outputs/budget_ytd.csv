@@ -1,0 +1,4 @@
+department,account,currency,budget,actual,variance
+HR,6602,CNY,0,100,100
+IT,6602,CNY,500,400,-100
+Sales,6602,CNY,1900,2200,300

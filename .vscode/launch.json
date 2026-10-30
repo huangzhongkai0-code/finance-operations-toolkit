@@ -1,0 +1,7 @@
+{
+ "version":"0.2.0",
+ "configurations":[
+  {"name":"运行全部演示工具","type":"debugpy","request":"launch","program":"${workspaceFolder}/main.py","console":"integratedTerminal","cwd":"${workspaceFolder}"},
+  {"name":"运行当前打开的 Python 文件","type":"debugpy","request":"launch","program":"${file}","console":"integratedTerminal","cwd":"${workspaceFolder}"}
+ ]
+}

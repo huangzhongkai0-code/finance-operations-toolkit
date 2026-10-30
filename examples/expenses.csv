@@ -1,0 +1,4 @@
+id,date,category,currency,amount,budget_rate
+E1,2026-10-01,Travel,USD,100,7.00
+E2,2026-10-01,Software,CNY,200,1
+E3,2026-10-02,Travel,EUR,50,7.80

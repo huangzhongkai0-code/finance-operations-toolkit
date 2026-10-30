@@ -1,0 +1,4 @@
+invoice_id,customer,invoice_date,due_date,currency,amount
+I1,Example Customer A,2026-09-01,2026-09-30,CNY,1000
+I2,Example Customer B,2026-10-01,2026-11-15,USD,500
+I3,Example Customer C,2026-07-01,2026-07-15,CNY,200

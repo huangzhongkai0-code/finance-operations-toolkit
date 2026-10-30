@@ -1,0 +1,4 @@
+ledger_id,currency,amount,source,row
+L2,CNY,-200,ledger.csv,3
+L3,CNY,-200,ledger.csv,4
+L4,CNY,100,ledger.csv,5

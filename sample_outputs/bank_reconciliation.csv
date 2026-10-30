@@ -1,0 +1,5 @@
+bank_id,ledger_id,currency,bank_amount,status,candidate_ids,source,row
+B1,L1,CNY,1000,MATCHED,L1,bank.csv,2
+B2,,CNY,-200,REVIEW,L2;L3,bank.csv,3
+B3,,CNY,-15,UNMATCHED,,bank.csv,4
+B4,,USD,100,UNMATCHED,,bank.csv,5

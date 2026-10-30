@@ -1,0 +1,4 @@
+account,currency,opening,movement,expected_closing,reported_closing,difference,status
+1002,CNY,5000,820,5820,5820,0,OK
+1122,CNY,3000,-1000,2000,2000,0,OK
+6602,CNY,0,200,200,250,50,REVIEW
